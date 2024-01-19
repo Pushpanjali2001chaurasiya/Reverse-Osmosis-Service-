@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Reverse Osmosis</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      cursor: pointer;
+    }
+  
+    .background {
+      background: rgb(1, 8, 19);
+      background-blend-mode: darken;
+      background-size: cover;
+    }
+  
+    .nav-list {
+      width: 70%;
+      display: flex;
+      align-items: center;
+    }
+  
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo img {
+      width: 180px;
+      border-radius: 50px;
+    }
+  
+    .nav-list li {
+      list-style: none;
+      padding: 26px 30px;
+    }
+  
+    .nav-list li a {
+      text-decoration: none;
+      color: rgb(241, 234, 234);
+    }
+  
+    .nav-list li a:hover {
+      color: grey;
+    }
+  
+    .rightnav {
+      width: 30%;
+      text-align: right;
+    }
+  
+    #search {
+      padding: 5px;
+      font-size: 17px;
+      border: 2px solid grey;
+      border-radius: 9px;
+    }
+  
+    .firstsection {
+      background-color:RGB(190, 227, 249) ;
+      height: 400px;
+  }
+    .secondsection {
+      background-color: rgb(7, 117, 201);
+      height: 400px;
+    }
+  
+    .box-main {
+          text-align:center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      max-width: 50%;
+          margin-left: 360px;
+          margin-top: 1px;
+      height: 50%;
+    }
+  
+    .firsthalf {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .secondhalf {
+      width: 30%;
+    }
+  
+    .secondhalf img {
+      width: 70%;
+      border: 4px solid white;
+      border-radius: 150px;
+      display: block;
+      margin: auto;
+    }
+  
+    .text-big {
+      font-family: 'Piazzolla', serif;
+      font-weight: bold;
+      font-size: 35px;
+    }
+  
+    .text-small {
+      font-size: 18px;
+    }
+  
+    .btn {
+      padding: 8px 20px;
+      margin: 7px 0;
+      border: 2px solid white;
+      border-radius: 8px;
+      background: none;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .btn-sm {
+      padding: 6px 10px;
+      vertical-align: middle;
+    }
+  
+    .section {
+      height: 390px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 90%;
+      margin: auto;
+    }
+  
+    .section-Left {
+      flex-direction: row-reverse;
+    }
+  
+  
+    .thumbnail img {
+      width: 250px;
+      border: 2px solid black;
+      border-radius: 26px;
+      margin-top: 19px;
+    }
+  
+    .center {
+      text-align: center;
+    }
+  
+    .text-footer {
+      text-align: center;
+      padding: 30px 0;
+      font-family: 'Ubuntu', sans-serif;
+      display: flex;
+      justify-content: center;
+      color: rgb(225, 210, 210);
+    }
+  
+      * {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+  float: left;
+    width: 400px;
+    padding:10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display:flex;
+    clear:both;
+    display: table;
+  }
+     
+  </style>
+
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">Widely considered one of the most effective water filtration methods, reverse osmosis (RO) creates clean, great-tasting water. RO systems are used in a variety of applications, including filtration for whole houses, faucets, aquariums, and restaurants. No matter what kind of water you start out with, there is likely an RO system that will suit your needs. Below you will find what reverse osmosis systems are, how they are beneficial, and what they are used for. You can also find a list of the best reverse osmosis systems on the market.
+  
+  <section class="firstsection">
+    <div class="box-main">
+      <div class="firstHalf">
+        <br>
+                <h1 class="text-big">
+                  <br><br>
+                   <u> Our mission</u>
+                </h1>
+        
+        <p class="text-small">
+          Our mission is to make india a healthy and prosperous country.We and our team are working harda to deliver the best products in the fiels of healthcare and home application. 
+        </p>
+                
+        <h1 class="text-big">
+          <u>Excellent Support </u>
+                </h1>
+        
+        <p class="text-small">
+          If You face any trouble ,you can always let our dedicated support team help you .They are ready to for you 24*7.
+        </p>
+               
+            
+      </div>
+
+            <div class="firstHalf">
+                <h1 class="text-big">
+                  <br><br>
+          <u>Our Plan</u></h1>
+        
+        <p class="text-small">
+          Our plan is to make a system where eachh people get a healthy environment to live and grow .We with the help oh technolgy trying to make sustainable and economical heathcare pproducts.
+        </p>
+            
+        <h1 class="text-big">
+          <u>Faster perfomannce</u>
+                </h1>
+    
+        <p class="text-small">
+        We deploy a sysmetic well-ordered proccess oof analysis ,from concept through implementation.	
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="section">
+    
+<div class="row">
+    <h1 class="text-big" id="program">
+        <u>Meet Our Team</u><br><br>
+    </h1>
+  <div class="column">
+    <img src="{% static 'images/pushpanjali.jpg' %}" alt="Snow" style="width:380px" height="169%">
+  </div>
+  <div class="column">
+    <img src="{% static 'images/pratibha.jpg' %}" alt="Forest" style="width:380px" height="169%">
+  </div>
+  <div class="column">
+    <img src="{% static 'images/anpu.jpg' %}" alt="Mountains" style="width:380px" height="169%">
+  </div>
+</div>
+  </section>
+
+</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+
+
+
+
+</html>
