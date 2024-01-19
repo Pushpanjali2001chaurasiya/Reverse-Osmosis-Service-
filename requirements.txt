@@ -19,7 +19,6 @@ lxml
 oscrypto
 Pillow
 pycairo
-pycparse
 pyHanko
 pyhanko-certvalidator
 pypdf
